@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Microsoft.Azure.WebJobs.Extensions.AppInsights.Test</AssemblyName>
+    <RootNamespace>Microsoft.Azure.WebJobs.Extensions.AppInsights.Test</RootNamespace>
+    <Authors>Microsoft</Authors>
   </PropertyGroup>
 
   <ItemGroup>
