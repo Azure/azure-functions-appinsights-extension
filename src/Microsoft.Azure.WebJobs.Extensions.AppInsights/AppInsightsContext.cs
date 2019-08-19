@@ -1,13 +1,13 @@
 ﻿// Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
+using System.Diagnostics;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Azure.WebJobs.Extensions.AppInsights.Data;
+
 namespace Microsoft.Azure.WebJobs.Extensions.AppInsights
 {
-    using System.Diagnostics;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Microsoft.Azure.WebJobs.Extensions.AppInsights.Data;
-
     public class AppInsightsContext : IAsyncCollector<AppInsightsData>
     {
         public string InstrumentationKey { get; set; }

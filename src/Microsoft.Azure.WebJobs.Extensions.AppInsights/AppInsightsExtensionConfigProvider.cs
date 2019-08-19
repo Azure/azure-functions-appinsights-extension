@@ -1,19 +1,19 @@
 ﻿// Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using Microsoft.ApplicationInsights.Extensibility;
+using Microsoft.Azure.WebJobs.Description;
+using Microsoft.Azure.WebJobs.Extensions.AppInsights.Data;
+using Microsoft.Azure.WebJobs.Host.Config;
+using Newtonsoft.Json.Linq;
+
 namespace Microsoft.Azure.WebJobs.Extensions.AppInsights
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using Microsoft.ApplicationInsights.Extensibility;
-    using Microsoft.Azure.WebJobs.Description;
-    using Microsoft.Azure.WebJobs.Extensions.AppInsights.Data;
-    using Microsoft.Azure.WebJobs.Host.Config;
-    using Newtonsoft.Json.Linq;
-
     [Extension(nameof(AppInsightsContext))]
-    class AppInsightsExtensionConfigProvider : IExtensionConfigProvider
+    public class AppInsightsExtensionConfigProvider : IExtensionConfigProvider
     {
         private readonly TelemetryConfiguration telemetryConfig;
 
