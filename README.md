@@ -1,3 +1,8 @@
+|Branch|Status|
+|---|---|
+|master|[![Build Status](https://azfunc.visualstudio.com/Azure%20Functions/_apis/build/status/azure-functions-appinsights-extension-ci?branchName=master)](https://azfunc.visualstudio.com/Azure%20Functions/_build/latest?definitionId=35&branchName=master)|
+|dev|[![Build Status](https://azfunc.visualstudio.com/Azure%20Functions/_apis/build/status/azure-functions-appinsights-extension-ci?branchName=dev)](https://azfunc.visualstudio.com/Azure%20Functions/_build/latest?definitionId=35&branchName=dev)|
+
 # AppInsights Extension for Azure Functions
 This extension provides functionality to receive operation id from the runtime to allow for distributed tracing. It also provides a way to add custom dimensions to the request telemetry.
 
